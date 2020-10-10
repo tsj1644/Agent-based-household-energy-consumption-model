@@ -1,0 +1,5 @@
+>The whole software of our model is divided into two parts: the neural networks which locate in folders named by strings beginning with 'neural_network_' and the agent-based model which locates in the folder named 'agent_based_household_energy_model'.
+
+>For neural networks, the 'aa.py' is the main program, and the 'MyData.py' is the data provider. You can specify another data source by changing the string "dsvr = MyDataServer('data.csv',..." in 'aa.py'. The neural networks will be stored in the folder 'fraud_model' during the training process. And the loss, auc and other indicators of the neural networks can be observed with tensorboard by specify the log source to the folder 'logs'. 
+
+>For agent-based model, the 'aa.py' is the main program. You can specify different data sources to initialize the model by changing the string "model = HouseholdModel('data/data.crecs2014.csv', 'data/data.powers.crecs.csv')". The results of the model will be stored in the folder 'status' and you can analysis them in your preferring way.
